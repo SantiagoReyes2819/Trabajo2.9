@@ -1,0 +1,47 @@
+
+body {
+    font-family: Arial;
+    background: white;
+    margin: 30px;
+}
+
+.contenedor {
+    width: 500px;
+    background: white;
+    padding: 20px;
+}
+
+h1 {
+    color: #24536b;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    padding: 7px;
+    width: 95%;
+}
+
+button, .menu a {
+    display: block;
+    background: #3287b5;
+    color: white;
+    padding: 10px;
+    margin-top: 12px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.resultado, .error {
+    margin-top: 15px;
+    padding: 10px;
+    background: white;
+}
+
+.regresar {
+    color: #3287b5;
+}
