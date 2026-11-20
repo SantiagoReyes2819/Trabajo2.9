@@ -1,7 +1,6 @@
 
 <?php
 
-// Obtener las primeras tres letras del nombre
 function obtenerIniciales($nombre) {
     $nombre = trim($nombre);
     $nombre = str_replace(" ", "", $nombre);
@@ -9,12 +8,10 @@ function obtenerIniciales($nombre) {
     return strtoupper(substr($nombre, 0, 3));
 }
 
-// Obtener los ultimos dos digitos del año
 function obtenerAnio($fecha) {
     return substr($fecha, 2, 2);
 }
 
-// Obtener el mes y el dia
 function obtenerMesDia($fecha) {
     $mes = substr($fecha, 5, 2);
     $dia = substr($fecha, 8, 2);
@@ -22,7 +19,6 @@ function obtenerMesDia($fecha) {
     return $mes . $dia;
 }
 
-// Formar la clave completa
 function generarClave($nombre, $fecha) {
     $iniciales = obtenerIniciales($nombre);
     $anio = obtenerAnio($fecha);

@@ -1,7 +1,6 @@
 
 <?php
 
-// Quitar espacios del nombre
 function limpiarNombre($nombre) {
     $nombre = trim($nombre);
     $nombre = str_replace(" ", "", $nombre);
@@ -9,24 +8,20 @@ function limpiarNombre($nombre) {
     return $nombre;
 }
 
-// Convertir el nombre a minusculas
 function convertirMinusculas($texto) {
     return strtolower($texto);
 }
 
-// Obtener las primeras dos letras de la institucion
 function obtenerInstitucion($institucion) {
     $institucion = trim($institucion);
 
     return strtolower(substr($institucion, 0, 2));
 }
 
-// Obtener los ultimos dos digitos del año
 function obtenerAnio($anio) {
     return substr($anio, -2);
 }
 
-// Crear el nombre de usuario
 function generarUsuario($nombre, $institucion, $anio) {
     $nombre = limpiarNombre($nombre);
     $nombre = convertirMinusculas($nombre);
